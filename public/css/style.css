@@ -1,0 +1,243 @@
+html, body { 
+	height:100%; 
+	width:100%;
+}
+
+#content span {
+	color: white;
+}
+
+#content p {
+	color: white;
+}
+
+td, th {
+    padding: 0;
+    position: relative;
+}
+ 
+#header {
+	background: url("../img/header.png");
+	height: 100px;
+
+	background-repeat: repeat-y; 
+	background-position: right; 
+	position: relative;
+}
+
+#logo {
+	position: absolute;
+	right: 165px;
+}
+
+#logoImg {
+	padding-top: 24px;
+}
+
+#content {
+	height: calc(100% - 100px);
+	width: 75%;
+	float: right;
+}
+
+#generalLobby {
+	height: 100%;
+	width: 100%;
+}
+
+#roomLobby {
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: relative;
+}
+
+#roomContainer {
+	width: 50%;
+	float: left;
+}
+
+#createRoomForm {
+	width: 50%;
+	float: left;
+}
+
+#createRoom {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	outline: none;
+}
+
+#createRoom:active {
+    vertical-align: top;
+    padding: 1px 1px 1px;
+}
+
+div#sidebar {
+    background-color: #D3D3D3;
+    width: 25%;
+    height: calc(100% - 100px);
+    float: left;
+    border-left: solid 1px #BEBEBE;
+    z-index: 1;
+    -webkit-transition: -webkit-transform 500ms, right 500ms;
+}
+
+.highlightedName {
+	color: green;
+}
+
+#controls {
+	width:	60%;
+	height: 10%;
+}
+
+#roomName {
+	float: left;
+}
+
+#backToLobbyBtn, #startDraftButton {
+	float: left;
+}
+
+#round {
+	float: left;
+	padding-left: 5px;
+}
+
+#curDirection {
+	float: left;
+	padding-left: 5px;
+}
+
+.scrollImg {
+  	-webkit-border-radius: 8px;
+  	-moz-border-radius: 8px;
+  	-khtml-border-radius: 8px;
+  	border-radius: 8px;
+}
+
+.resourceImg {
+	width: 30px;
+  	height: 30px;
+  	position: absolute;
+  	left: 15px;
+  	top: 45px;
+  	pointer-events: none;
+}
+
+.scrollStats {
+	position: absolute;
+  	left: 60px;
+ 	top: 50px;
+ 	pointer-events: none;
+}
+
+.scrollCost {
+	position: absolute;
+  	left: 7px;
+  	top: 50px;
+  	pointer-events: none;
+}
+
+.scrollCount {
+	position: absolute;
+  	right: 15px;
+  	top: 1px;
+  	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  	font-size: 20px;
+  	pointer-events: none;
+}
+
+.pickedImg {
+	-webkit-border-radius: 8px;
+  	-moz-border-radius: 8px;
+  	-khtml-border-radius: 8px;
+  	border-radius: 8px;
+  	height: 88px;
+	width: 112px;
+}
+
+.scrollImg:hover{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+ 	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.67);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(0, 0, 0, 0.67);
+	box-shadow:         0px 0px 30px 0px rgba(0, 0, 0, 0.67);
+}
+
+#mainPanel {
+	padding: 0;
+	margin: 0;
+	height: 40%;
+	width: 70%;
+	float: left;
+	position: absolute;
+	z-index: 2;
+}
+
+.disabledRoom {
+	background-color: crimson;
+}
+
+#deckOutputForm {
+	display: none;
+	width: 100%;
+}
+
+#deckOutputForm input[type=text] {
+	width: 100%;
+}
+
+.passwordJoinInput input[type=text] {
+	width: 100%;
+}
+
+input.error { border: 1px solid #f00; }
+
+.selectedBorder {
+	border: solid 2px yellowgreen;
+}
+
+#scrollPreview {
+	width: 30%;
+	height: 50%;
+	right: 0;
+	top: 0;
+	position: absolute;
+	pointer-events: none;
+	z-index: 3;
+}
+
+.scrollPreviewImg {
+	height:	100%;
+	max-width: 100%;
+}
+
+#deckList {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	height: auto;
+	max-height: 50%;
+	overflow: auto;
+	width: 100%;
+	bottom: 0;
+	float:left;
+	position: absolute;
+	z-index: 1;
+}
+
+ul#scrolls li {
+    float:left; 
+    width:20%;
+    padding: 1px;
+    position: relative;
+}
+
+ul#deckList li {
+	float: left;
+	position: relative;
+}

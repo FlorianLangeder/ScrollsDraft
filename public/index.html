@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scrolls Draft</title>
+	<link href="css/style.css" rel="stylesheet"/>
+	<link href="css/chat.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href='/css/lib/bootstrap.min.css'/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<script src='socket.io/socket.io.js'></script>
+	<script src='script/lib/jquery-1.11.3.min.js'></script>
+	<script src='script/lib/bootstrap.min.js'></script>
+	<script src='script/lib/bootbox.min.js'></script>
+	<script src='script/lobby.js'></script>
+	<script src='script/switch.js'></script>
+	<script src='script/chat.js'></script>
+	<script src='script/draft.js'></script>
+	<script>
+	$(document).ready(execjs);
+	</script>
+</head>
+<body style="background-image: url(img/pattern.png)">
+<div id="header">
+	<a href="http://www.scrollsguide.com/forum/viewtopic.php?t=5746" id="logo">
+		<img id="logoImg" src="img/logo.png"/>
+	</a>
+</div>
+<div id='content' hidden>
+	<div id='generalLobby'>
+		<div id='createRoomForm'>
+		<input type='text' id='roomNameInput'/>	
+			<span>Room Name</span> <br>
+			<input type='text' id='packCountInput' placeholder='8'/>
+			<span>Packs</span> <br>
+			<input type='text' id='maxPlayerInput' placeholder='8'/>
+			<span>Max Player</span> <br>
+		 	<input type='text' id='passwordInput' /> 
+			<span>Password</span> <br> 
+			<button id="createRoom">
+			<img src="/img/createRoom.png" width="348" height="67" alt="submit" />
+			</button> 
+		</div>
+		<div id='roomContainer'>
+			<ul id='roomList'>
+			</ul>
+		</div>
+	</div>
+	<div id='roomLobby' display='none'>
+		<div id='controls'>
+			<p id='roomName'></p>
+			<button id='backToLobbyBtn'>Leave</button>
+			<button id='startDraftBtn'>Start</button>
+			<p id='round'></p>
+			<p id='direction'></p>
+		</div>
+		<div id='mainPanel'>
+			<table id='scrolls'> 
+				<tr id="scrollRow1"></tr>
+				<tr id="scrollRow2"></tr>
+			</table>
+			<div id='deckOutputForm'>
+				<input type='text' id='deckTextField' readonly></input>
+			</div>
+		</div>
+		<div id='scrollPreview'> </div>
+		<ul id='deckList'> </ul>
+	</div>
+</div>
+<div id="sidebar" class="tabbable">
+	<ul id="chatTabs" class="nav nav-tabs">
+    	<li class="active tab"><a href="#chatTab" data-toggle="tab">Chat</a></li>
+    	<!-- <li class="tab"><a href="#rulesTab" data-toggle="tab">Rules</a></li> -->
+  	</ul>
+	<div class="tab-content">
+	    <div class="tab-pane active" id="chatTab">
+      		<div id='chat'>
+				<div id='userList'>
+				</div>
+				<div id='chatlog'></div>
+				<div id='chatTools'>
+					<input type='text' id='msgInput'></input>
+					<button type='button' id='postmsg' class='btn btn-primary btn-xs'>post</button>
+				</div>
+			</div>
+	    </div>
+	   <!-- <div class="tab-pane" id="rulesTab">
+	    	<div id="rules">
+    			Lorem Ipsum Dolor Sit Amet
+	    	</div>
+	    </div> -->
+  </div>
+</div>
+
+</body>
+</html>

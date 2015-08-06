@@ -1,0 +1,53 @@
+.tab {
+	width: 50%;
+	text-align: center;
+}
+
+.nav>li>a{
+	padding: 2px 15px !important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	background-color: #D3D3D3 !important;
+}
+
+#chatTools {
+	border-top: solid 1px #BEBEBE;
+	bottom: 0;
+	position: absolute;
+	width: 25%;
+}
+
+#userList {
+	max-height: calc(100% - 40px - 26px);
+	width: 30%;
+	float: right;
+	margin: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 10px;
+}
+
+#chatlog {
+	max-height: calc(100% - 100px - 40px - 26px);
+	width: calc(25% * 0.7);
+	bottom: 26px;
+ 	color: #76879b;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 5px 5px 5px;
+    font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    position: absolute;
+}
+
+#msgInput {
+	width: calc(100% - 95px);
+}
+
+#postmsg {
+	right: 10px;
+	width: 70px;
+}
